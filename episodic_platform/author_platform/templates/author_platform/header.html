@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Episodic</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		html,
+		body {
+			height:100%;
+		    background-image: url(/static/author_platform/img/Dusk.jpg);
+		    color:white;
+		}
+
+		.navbar {
+		background-color: transparent;
+		color: white;
+		text-align: center;
+		}
+
+		.navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display:  table;
+        table-layout: fixed;
+    }
+
+    	.navbar-nav > li{
+    		float: none;
+  			margin-left:40px;
+  			margin-right:40px;
+  			padding-top:0px;
+  			color: white;
+  			display: inline-block;
+    		list-style-type: none;
+    		vertical-align: middle;
+			}
+
+
+		.navbar-nav li a {
+    	color: white;
+		}
+
+		ul {
+		list-style-type:none;
+		color: white;
+		margin-left:0 auto;
+    	margin-right:0 auto;
+		}
+
+		ul li {
+		margin-left: auto;
+    	margin-right: auto;
+    	position: relative;
+    	color: white;
+		 }
+
+		ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: transparent;
+        color: white;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    	ul li:hover ul.dropdown{
+        display: block;
+        color: white;  /* Display the dropdown */
+    }
+    	ul li ul.dropdown li{
+        display: block;
+        color: white;
+    }
+
+	.container{
+		position: absolute;
+		left: 0%;
+		top: 25%;
+		height: 100%;
+		margin-top: 0px; /* half of you height */
+		width: 100%;
+		margin-left: 0px /* half of you width */
+
+		}
+	</style>
+</head>
+
+
+<body class="body">
+	<header id="layout-header">
+		<nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
+		<div id="main-navigation" class="collapse navbar-collapse navbar-main-collapse">
+			<ul class = "nav navbar-nav">
+			<li class=""><a href="#">ABOUT </a>
+				<ul class="dropdown">
+					<li class=""><a href="https://www.squaresocket.com/who-we-are">Who we are</a></li>
+					<li class=""><a href="/meet-the-team">Meet the Team</a></li>
+				</ul>
+				</li>
+			<li class=""><a href="#">SERVICES</a>
+					<ul class="dropdown">
+						<li class=""><a href="#">Become An Author</a></li>
+						<li class=""><a href="#">Simple Packages</a></li>
+						<li class=""><a href="#">Bespoke Development</a></li>
+						<li class="dropdown-submenu"><a tabindex="-1" href="#">Software <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+							<ul class="dropdown-menu">
+							<li><a tabindex="-1" href="/wordpress-developers">Wordpress</a></li>
+							<li><a tabindex="-1" href="/octobercms-developers">OctoberCMS</a></li>
+							<li><a tabindex="-1" href="/laravel-developers">Laravel</a></li>
+							<li><a tabindex="-1" href="/takeaway-squared">Takeaway<sup>2</sup></a></li>
+							<li><a tabindex="-1" href="/affiliate-marketing-automated-data-feeds">Affiliate Marketing</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class=""><a href="#"><img class="ss-logo desktop-logo" width="180" height="120" src="{% static 'author_platform/img/EPISODIC.png' %}"></a></li>
+		<li class=""><a href="#">CONTACT</a></li>
+		<li class=""><a href="#">SUPPORT</a></li>
+		</ul>
+		</div>
+		</nav>
+
+	</header>
+
+	<div class="container" style="min-height:95%; ">
+		<p>sdqsqSFf</p>
+
+	</div>
+	<div class="container">
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+		</div>
+	</footer>
+	</div>
+</body>
+
+</html>
